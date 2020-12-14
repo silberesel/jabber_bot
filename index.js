@@ -44,7 +44,7 @@ client.on("ready", () => {
 	ping = ping.replace((/&lt;/g), '<'); 
 	console.log(config.mention+ping);
 
-  //channel.send(config.mention+ping);
+  channel.send(config.mention+ping);
 
 });
 
