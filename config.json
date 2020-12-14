@@ -1,0 +1,10 @@
+{
+	"BOT_TOKEN": "",
+	//id of channel you will post messages	
+	"ChannelID": "",
+	//FilePath of Pidgin logs - Directorbot Folder
+	"FilePath" : "/home/pi/.purple/logs/jabber/manfred_eselhauser@goonfleet.com/directorbot@goonfleet.com",
+	//username the bot will parse	
+	"Sender" : "directorbot:",
+	"mention": "@everyone"
+}
