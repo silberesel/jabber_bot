@@ -1,0 +1,29 @@
+{
+  "name": "discord-jabber-transport-bot",
+  "version": "5.3.1",
+  "description": "Simple bridge bot between Discord channel and Jabber conference (XMPP MUC)",
+  "main": "app.js",
+  "scripts": {
+    "start": "export DEBUG=*,-debug:*,-xmpp:*; node app.js",
+    "start-win": "set DEBUG=info,error:*,debug:*&& node ./index.js",
+    "start-debug": "export DEBUG=*; node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shtrih/discord-xmpp-transport-bot.git"
+  },
+  "author": "shtrih",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.4.3",
+    "cjson": "^0.5",
+    "debug": "^4.1",
+    "discord.js": "^11.5.1",
+    "line-reader": "^0.4.0",
+    "node-xmpp-client": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=7.7.1"
+  }
+}

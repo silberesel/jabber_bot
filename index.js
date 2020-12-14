@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
-const chokidar = require('chokidar');
-var lineReader = require('line-reader'); 
-const Debug = require('debug');
+const chokidar = require("chokidar");
+var lineReader = require("line-reader"); 
+const Debug = require("debug");
 
 const config = require("./config.json");
 const prefix = "!";
@@ -44,7 +44,7 @@ client.on("ready", () => {
 	ping = ping.replace((/&lt;/g), '<'); 
 	console.log(config.mention+ping);
 
-  channel.send(config.mention+ping);
+  //channel.send(config.mention+ping);
 
 });
 
