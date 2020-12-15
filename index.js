@@ -5,6 +5,7 @@ const Debug = require("debug");
 
 const config = require("./config.json");
 const prefix = "!";
+var oldping = "";
 
 LogError = ((debug) => {
         return function() {
@@ -31,8 +32,7 @@ chokidar.watch(config.FilePath).on('change', (event, path) => {
 const client = new Discord.Client();
 
 client.on("ready", () => {
-  console.log(`Bot will post the new message`);
-  client.user.setActivity(`postet jabber logs`);
+  client.user.setActivity(`jabber relay`);
   const channel = client.channels.get(config.ChannelID);
 
 	var ping = merke;
@@ -42,9 +42,16 @@ client.on("ready", () => {
 	ping = ping.replace((/<\/font>/g), ''); 
 	ping = ping.replace((/&gt;/g), '>'); 
 	ping = ping.replace((/&lt;/g), '<'); 
-	console.log(config.mention+ping);
 
-  channel.send(config.mention+ping);
+	if (ping === oldping) {
+    		console.log("block double posting");
+  	} else {
+		console.log(`Bot will post the new message`);
+		channel.send(config.mention+ping);
+		oldping = ping;
+		console.log(config.mention+ping);
+  	};
+  	
 
 });
 
