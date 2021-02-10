@@ -1,12 +1,12 @@
 {
 "prefix": "!",
 "discord": {
-	"token": "Nzg2MTc0OTA5NjM4MTE1MzI4.X9CkcA.oQPUOw634LXKFQ77NGU6JyCT5MY",
-	"ChannelID": "786608413315563540",
-	"mention":  "<@362564286641602561><@373791882813243392>"
+	"token": "",
+	"ChannelID": "",
+	"mention":  ""
 	},
 "filesys": {
-	"FilePath" : "/home/pi/.purple/logs/jabber/manfred_eselhauser@goonfleet.com/directorbot@goonfleet.com",
+	"FilePath" : "/home/pi/.purple/logs/jabber/",
 	"Sender" : "directorbot:"
 	
 	}
